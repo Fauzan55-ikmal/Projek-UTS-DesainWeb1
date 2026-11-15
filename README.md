@@ -50,7 +50,7 @@ MAYS-Store/
 1. Clone repository ini ke komputer lokal Anda:
 
 Bash
-git clone [https://github.com/Fauzan55-ikmal/mays-store.git](https://github.com/Fauzan55-ikmal/mays-store.git)
+git clone [https://github.com/Fauzan55-ikmal/Projek-UTS-DesainWeb1](https://github.com/Fauzan55-ikmal/Projek-UTS-DesainWeb1)
 
 2. Buka folder proyek menggunakan teks editor pilihan Anda (disarankan Visual Studio Code).
 
