@@ -1,0 +1,23 @@
+# ==========================================
+# PROJEK UTS — Git Ignore Rules
+# ==========================================
+
+# System Files & OS Junk (Windows, macOS, & Linux)
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE & Editor Config
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs & Temporary Files
+*.log
+tmp/
