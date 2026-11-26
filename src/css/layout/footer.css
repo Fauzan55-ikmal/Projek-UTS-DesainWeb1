@@ -1,0 +1,68 @@
+.site-footer
+{
+  color: var(--color-muted);
+  background: #F0F2EB;
+}
+.footer-main
+{
+  display: grid;
+  grid-template-columns: minmax(15rem, 1.7fr) 1fr 1fr;
+  gap: 3rem;
+  padding-block: 2.5rem;
+}
+.brand--footer .brand__mark
+{
+  color: #fff;
+  background: var(--color-primary);
+}
+.footer-brand p
+{
+  max-width: 22rem;
+  margin-top: 1rem;
+  color: var(--color-muted);
+  font-size: .85rem;
+}
+.footer-column
+{
+  display: grid;
+  align-content: start;
+  gap: .55rem;
+}
+.footer-column h2
+{
+  margin-bottom: .3rem;
+  color: var(--color-primary);
+  font-family: var(--font-body);
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.footer-column a
+{
+  width: fit-content;
+  font-size: .83rem;
+  transition: color var(--transition-fast);
+}
+.footer-column a:hover, .footer-bottom a:hover
+{
+  color: var(--color-primary);
+}
+.footer-bottom
+{
+  display: flex;
+  min-height: 3.8rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-top: 1px solid var(--color-border);
+  font-size: .72rem;
+}
+.footer-bottom a
+{
+  font-weight: 700;
+}
+.footer-bottom p
+{
+  margin: 0;
+}
