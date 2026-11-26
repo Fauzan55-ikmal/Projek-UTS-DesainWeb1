@@ -1,0 +1,409 @@
+/* Halaman destinasi: kartu tetap statis dan filter memakai radio HTML + CSS. */
+.destination-explore
+{
+  padding-block: clamp(2.5rem, 5vw, 4rem) 2rem;
+}
+.destination-explore__top
+{
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2.5rem;
+  margin-bottom: 1.7rem;
+}
+.destination-explore__top h1
+{
+  max-width: 10ch;
+  margin-top: .65rem;
+  color: var(--color-primary-dark);
+  font-family: var(--font-display);
+  font-size: clamp(3.2rem, 6vw, 5rem);
+  line-height: .98;
+}
+.destination-explore__top h1 em
+{
+  color: var(--color-primary-soft);
+}
+.destination-explore__intro
+{
+  max-width: 27rem;
+  padding-bottom: .35rem;
+  color: var(--color-muted);
+  font-size: .9rem;
+  line-height: 1.8;
+}
+.destination-browser
+{
+  position: relative;
+}
+.destination-filter-heading
+{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: .65rem;
+  color: var(--color-muted);
+  font-size: .62rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+.destination-filter-heading span:last-child
+{
+  font-weight: 600;
+}
+.destination-filter__input
+{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+.destination-filter__label
+{
+  display: inline-flex;
+  min-height: 2.5rem;
+  align-items: center;
+  margin: 0 .35rem .5rem 0;
+  padding: .55rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  color: var(--color-primary);
+  background: #fff;
+  cursor: pointer;
+  font-size: .73rem;
+  font-weight: 700;
+  transition: color var(--transition-base), background var(--transition-base), border-color var(--transition-base), transform var(--transition-base);
+}
+.destination-filter__label:hover
+{
+  transform: translateY(-2px);
+  border-color: var(--color-primary-soft);
+}
+#filter-all:checked + .destination-filter__label, #filter-nature:checked + .destination-filter__label, #filter-city:checked + .destination-filter__label, #filter-public:checked + .destination-filter__label
+{
+  color: #fff;
+  border-color: var(--color-primary);
+  background: var(--color-primary);
+}
+#filter-all:focus-visible + .destination-filter__label, #filter-nature:focus-visible + .destination-filter__label, #filter-city:focus-visible + .destination-filter__label, #filter-public:focus-visible + .destination-filter__label
+{
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+.destination-result-line
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-block: 1rem .85rem;
+  color: var(--color-muted);
+  font-size: .69rem;
+}
+.destination-result-line p
+{
+  font-weight: 700;
+}
+.destination-result-line > span
+{
+  letter-spacing: .1em;
+}
+.destination-mood-grid
+{
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  align-items: start;
+  gap: .9rem;
+}
+.destination-mood-card
+{
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgb(29 46 39 / 8%);
+  border-radius: var(--radius-lg);
+  background: #fff;
+  box-shadow: 0 10px 32px rgb(21 57 47 / 5%);
+  animation: mood-card-arrive 560ms ease both;
+}
+.destination-mood-card:nth-child(2)
+{
+  animation-delay: 70ms;
+}
+.destination-mood-card:nth-child(3)
+{
+  animation-delay: 140ms;
+}
+.destination-mood-card:nth-child(4)
+{
+  animation-delay: 210ms;
+}
+.destination-mood-card__details > summary
+{
+  position: relative;
+  display: flex;
+  min-height: clamp(18rem, 27vw, 25rem);
+  align-items: end;
+  overflow: hidden;
+  padding: 1.35rem;
+  color: #fff;
+  background: var(--color-primary-dark);
+  cursor: pointer;
+  isolation: isolate;
+  list-style: none;
+}
+.destination-mood-card__details > summary::-webkit-details-marker
+{
+  display: none;
+}
+.destination-mood-card__visual img, .destination-mood-card__shade
+{
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+}
+.destination-mood-card__visual img
+{
+  object-fit: cover;
+  transition: transform 700ms ease, filter 500ms ease;
+}
+.destination-mood-card__shade
+{
+  z-index: -1;
+  background: linear-gradient(0deg, rgb(8 29 22 / 88%) 0%, rgb(8 29 22 / 28%) 48%, rgb(8 29 22 / 7%) 100%);
+}
+.destination-mood-card__label
+{
+  position: absolute;
+  top: 1.1rem;
+  left: 1.1rem;
+  padding: .45rem .72rem;
+  border: 1px solid rgb(255 255 255 / 42%);
+  border-radius: var(--radius-pill);
+  color: #fff;
+  background: rgb(10 34 26 / 32%);
+  backdrop-filter: blur(8px);
+  font-size: .59rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+.destination-mood-card__content
+{
+  display: grid;
+  width: calc(100% - 2.5rem);
+  gap: .35rem;
+  padding-top: 3.5rem;
+}
+.destination-mood-card__place
+{
+  color: rgb(255 255 255 / 70%);
+  font-size: .59rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.destination-mood-card__title
+{
+  display: block;
+  max-width: 18ch;
+  font-family: var(--font-display);
+  font-size: clamp(1.65rem, 2.4vw, 2.3rem);
+  font-weight: 400;
+  line-height: 1.05;
+}
+.destination-mood-card__description
+{
+  color: rgb(255 255 255 / 86%);
+  font-size: .75rem;
+  line-height: 1.5;
+}
+.destination-mood-card__arrow
+{
+  position: absolute;
+  right: 1.15rem;
+  bottom: 1.25rem;
+  display: grid;
+  width: 2.45rem;
+  height: 2.45rem;
+  place-items: center;
+  border: 1px solid rgb(255 255 255 / 64%);
+  border-radius: 50%;
+  color: #fff;
+  background: rgb(255 255 255 / 5%);
+  font-size: 1.1rem;
+  transition: transform var(--transition-base), background var(--transition-base);
+}
+.destination-mood-card__details > summary:hover img
+{
+  transform: scale(1.05);
+  filter: saturate(1.08);
+}
+.destination-mood-card__details > summary:hover .destination-mood-card__arrow
+{
+  transform: rotate(45deg);
+  background: rgb(255 255 255 / 18%);
+}
+.destination-mood-card__details > summary:active
+{
+  transform: scale(.99);
+}
+.destination-mood-card__details[open] > summary .destination-mood-card__arrow
+{
+  transform: rotate(45deg);
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+.destination-mood-card__detail
+{
+  padding: 1.15rem 1.25rem 1.3rem;
+  animation: card-detail-arrive 320ms ease both;
+}
+.destination-mood-card__eyebrow
+{
+  color: var(--color-muted);
+  font-size: .62rem;
+  font-weight: 800;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+.destination-mood-card__detail h2
+{
+  margin-top: .3rem;
+  color: var(--color-primary-dark);
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+}
+.destination-mood-card__description-expanded
+{
+  margin-top: .45rem;
+  color: var(--color-muted);
+  font-size: .8rem;
+  line-height: 1.7;
+}
+.destination-mood-card__address
+{
+  display: block;
+  margin-top: .7rem;
+  color: var(--color-primary);
+  font-size: .7rem;
+  font-weight: 700;
+}
+/* CSS-only category selection. No search script or external data source is needed. */
+#filter-nature:checked ~ .destination-mood-grid .destination-mood-card:not(.category-nature),
+#filter-city:checked ~ .destination-mood-grid .destination-mood-card:not(.category-city),
+#filter-public:checked ~ .destination-mood-grid .destination-mood-card:not(.category-public)
+{
+  display: none;
+}
+#filter-nature:checked ~ .destination-result-line p::after
+{
+  content: " · kategori alam";
+}
+#filter-city:checked ~ .destination-result-line p::after
+{
+  content: " · kategori kota & budaya";
+}
+#filter-public:checked ~ .destination-result-line p::after
+{
+  content: " · kategori ruang publik";
+}
+.destination-bottom-note
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1.5rem .25rem;
+}
+.destination-bottom-note p
+{
+  color: var(--color-muted);
+  font-size: .72rem;
+}
+.destination-bottom-note strong
+{
+  color: var(--color-primary);
+}
+@keyframes mood-card-arrive
+{
+  from
+  {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to
+  {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes card-detail-arrive
+{
+  from
+  {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to
+  {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 900px)
+{
+  .destination-mood-grid
+  {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .destination-mood-card__details > summary
+  {
+    min-height: 20rem;
+  }
+}
+@media (max-width: 680px)
+{
+  .destination-explore__top
+  {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: .65rem;
+  }
+  .destination-explore__top h1
+  {
+    font-size: clamp(3.1rem, 13vw, 4.4rem);
+  }
+  .destination-mood-grid
+  {
+    grid-template-columns: 1fr;
+  }
+  .destination-mood-card__details > summary
+  {
+    min-height: 19rem;
+  }
+  .destination-bottom-note
+  {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .destination-filter-heading
+  {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: .25rem;
+  }
+}
+@media (prefers-reduced-motion: reduce)
+{
+  .destination-mood-card, .destination-mood-card__detail
+  {
+    animation: none;
+  }
+  .destination-mood-card__visual img, .destination-filter__label
+  {
+    transition: none;
+  }
+}
