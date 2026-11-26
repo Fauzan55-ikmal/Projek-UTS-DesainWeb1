@@ -1,0 +1,49 @@
+body
+{
+  min-width: 320px;
+  color: var(--color-text);
+  background: var(--color-background);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3
+{
+  font-weight: 400;
+  line-height: 1.08;
+}
+h1, h2
+{
+  font-family: var(--font-display);
+  letter-spacing: -.025em;
+}
+h1 em, h2 em
+{
+  color: var(--color-accent);
+  font-weight: 400;
+}
+.eyebrow
+{
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  color: var(--color-muted);
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+.eyebrow__dot
+{
+  width: .45rem;
+  height: .45rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
+.eyebrow--light
+{
+  color: rgb(255 255 255 / 76%);
+}

@@ -1,0 +1,49 @@
+:root
+{
+  color-scheme: light;
+  /* MAPAY BANDUNG palette: calm greens, warm neutral, soft apricot */
+  --color-primary: #214F40;
+  --color-primary-dark: #15392F;
+  --color-primary-soft: #39715C;
+  --color-secondary: #DDE8DC;
+  --color-mint: #EEF3ED;
+  --color-accent: #E6A36B;
+  --color-background: #F7F7F1;
+  --color-surface: #FFFFFF;
+  --color-text: #1D2E27;
+  --color-muted: #6F7E75;
+  --color-border: #E2E8E0;
+  --color-overlay: rgb(12 34 27 / 66%);
+  --font-display: "DM Serif Display", Georgia, "Times New Roman", serif;
+  --font-body: "DM Sans", Arial, sans-serif;
+  --text-xs: .75rem;
+  --text-sm: .875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --heading-xl: clamp(3.5rem, 8vw, 7.25rem);
+  --heading-lg: clamp(2.6rem, 5.4vw, 4.8rem);
+  --heading-md: clamp(2rem, 3.5vw, 3rem);
+  --space-1: .25rem;
+  --space-2: .5rem;
+  --space-3: .75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 5rem;
+  --space-10: 7.5rem;
+  --container-width: 78rem;
+  --page-gutter: clamp(1.25rem, 5vw, 4rem);
+  --section-space: clamp(4rem, 7vw, 6rem);
+  --header-height: 5.25rem;
+  --radius-sm: .5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-pill: 999px;
+  --shadow-soft: 0 18px 55px rgb(21 57 47 / 10%);
+  --transition-fast: 160ms ease;
+  --transition-base: 260ms ease;
+  --z-header: 100;
+  --z-mobile-menu: 120;
+}
