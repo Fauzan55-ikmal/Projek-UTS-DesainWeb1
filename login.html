@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tampilan form masuk MAPAY BANDUNG. Fitur autentikasi belum tersedia.">
+  <meta name="theme-color" content="#214F40">
+  <title>Masuk — MAPAY BANDUNG</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/main.css">
+</head>
+<body class="page-login">
+<a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html" aria-label="MAPAY BANDUNG, beranda">
+      <span class="brand__mark" aria-hidden="true">MB</span>
+      <span class="brand__wordmark">MAPAY<strong>BANDUNG</strong></span>
+    </a>
+    <nav class="primary-nav" aria-label="Navigasi utama"><a href="index.html">Beranda</a><a href="artikel.html">Artikel</a><a href="destinasi.html">Destinasi</a><a href="wilayah.html">Diskusi</a></nav>
+    <a class="header-login" href="login.html" aria-label="Masuk ke MAPAY BANDUNG" title="Masuk" aria-current="page">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13 4h5a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-5"/><path d="M3 12h11m-4-4 4 4-4 4"/></svg>
+    </a>
+    <details class="mobile-nav">
+      <summary aria-label="Buka menu navigasi"><span>MENU</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg></summary>
+      <nav class="mobile-nav__panel" aria-label="Navigasi mobile"><a href="index.html">Beranda</a><a href="artikel.html">Artikel</a><a href="destinasi.html">Destinasi</a><a href="wilayah.html">Diskusi</a><a href="login.html" aria-current="page">Masuk</a></nav>
+    </details>
+  </div>
+</header>
+<main id="main-content">
+  <section class="login-layout" aria-labelledby="login-title">
+    <div class="login-visual">
+      <div class="login-visual__content">
+        <p class="eyebrow"><span class="eyebrow__dot"></span> GOOD TO SEE YOU AGAIN</p>
+        <h1>Perjalanan seru<br>selalu punya <em>cerita.</em></h1>
+        <p>Simpan inspirasi, temukan sudut baru, dan lanjutkan cerita perjalananmu bersama MAPAY BANDUNG.</p>
+        <span class="login-visual__caption">MAPAY BANDUNG · WEST JAVA, INDONESIA</span>
+      </div>
+    </div>
+    <div class="login-panel">
+      <div class="login-card">
+        <p class="eyebrow"><span class="eyebrow__dot"></span> YOUR JOURNEY, YOUR STORY</p>
+        <h2 id="login-title">Selamat <em>datang.</em></h2>
+        <p class="login-card__intro">Masuk untuk melanjutkan eksplorasimu.</p>
+        <form class="login-form">
+          <div class="form-field"><label for="login-email">Alamat email</label><input id="login-email" name="email" type="email" autocomplete="username" placeholder="nama@email.com" required></div>
+          <div class="form-field"><label for="login-password">Kata sandi</label><input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="Masukkan kata sandi" minlength="6" required></div>
+          <button class="button login-submit" type="button" disabled>Masuk ke akun</button>
+          <p class="login-status">Halaman ini merupakan desain form demo. Belum ada sistem akun atau autentikasi server.</p>
+        </form>
+        <div class="login-card__bottom"><span>Belum punya akun?</span><span class="login-card__muted">Fitur pendaftaran belum tersedia.</span></div>
+        <a class="login-back" href="index.html"><span aria-hidden="true">←</span> Kembali ke beranda</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="brand brand--footer" href="index.html" aria-label="MAPAY BANDUNG, beranda"><span class="brand__mark" aria-hidden="true">MB</span><span class="brand__wordmark">MAPAY<strong>BANDUNG</strong></span></a>
+        <p>Panduan ringan buat menemukan sudut kota, udara pegunungan, dan cerita seru di Bandung Raya.</p>
+      </div>
+      <div class="footer-column"><h2>Jelajahi</h2><a href="destinasi.html">Destinasi</a><a href="wilayah.html">Diskusi</a><a href="artikel.html">Cerita</a></div>
+      <div class="footer-column"><h2>Akun</h2><a href="login.html">Masuk</a><a href="index.html">Beranda</a></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 MAPAY BANDUNG · Project UTS Desain Web 1</p><a href="#main-content">Balik ke atas ↑</a></div>
+  </div>
+</footer>
+</body>
+</html>
