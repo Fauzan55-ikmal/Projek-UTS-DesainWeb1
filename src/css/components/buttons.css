@@ -1,0 +1,109 @@
+.button
+{
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  min-height: 3.15rem;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+  overflow: hidden;
+  padding: .8rem 1.35rem;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-pill);
+  color: #fff;
+  background: var(--color-primary);
+  box-shadow: 0 5px 16px rgb(21 57 47 / 10%);
+  font-size: .8rem;
+  font-weight: 700;
+  transition: transform 320ms cubic-bezier(.2,.8,.2,1), background 280ms ease, border-color 280ms ease, color 280ms ease, box-shadow 320ms ease;
+}
+.button::before
+{
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(110deg, transparent 22%, rgb(255 255 255 / 20%) 48%, transparent 74%);
+  content: "";
+  transform: translateX(-130%);
+  transition: transform 650ms cubic-bezier(.2,.7,.2,1);
+}
+.button span
+{
+  display: inline-block;
+  transition: transform 320ms cubic-bezier(.2,.8,.2,1);
+}
+.button:hover
+{
+  transform: translateY(-3px);
+  background: var(--color-primary-soft);
+  border-color: var(--color-primary-soft);
+  box-shadow: 0 12px 26px rgb(21 57 47 / 20%);
+}
+.button:hover::before
+{
+  transform: translateX(130%);
+}
+.button:hover span
+{
+  transform: translateX(2px);
+}
+.button--small
+{
+  min-height: 2.65rem;
+  padding: .65rem 1.05rem;
+  font-size: .74rem;
+}
+.button--outline
+{
+  color: var(--color-primary);
+  background: transparent;
+}
+.button--outline:hover
+{
+  color: #fff;
+}
+.button--light
+{
+  color: var(--color-primary-dark);
+  border-color: #fff;
+  background: #fff;
+}
+.button--light:hover
+{
+  color: var(--color-primary-dark);
+  border-color: var(--color-secondary);
+  background: var(--color-secondary);
+}
+.text-link, .card-link
+{
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: .55rem;
+  color: var(--color-primary);
+  font-size: .8rem;
+  font-weight: 700;
+  transition: gap var(--transition-base), color var(--transition-fast);
+}
+.text-link:hover, .card-link:hover
+{
+  gap: .85rem;
+  color: var(--color-primary-soft);
+}
+.button:active
+{
+  transform: translateY(0) scale(.965);
+  box-shadow: 0 3px 8px rgb(21 57 47 / 12%);
+}
+.button:active::before
+{
+  opacity: 0;
+}
+@media (prefers-reduced-motion: reduce)
+{
+  .button, .button::before, .button span
+  {
+    transition: none;
+  }
+}
