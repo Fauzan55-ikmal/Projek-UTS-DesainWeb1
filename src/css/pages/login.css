@@ -157,23 +157,6 @@
 .login-card__muted {
   color: var(--color-muted);
 }
-.login-back {
-  display: inline-flex;
-  width: fit-content;
-  align-items: center;
-  gap: 0.5rem;
-  margin-top: 2rem;
-  color: var(--color-primary);
-  font-size: 0.78rem;
-  font-weight: 700;
-  transition:
-    gap 220ms ease,
-    color 220ms ease;
-}
-.login-back:hover {
-  gap: 0.8rem;
-  color: var(--color-primary-soft);
-}
 @media (max-width: 900px) {
   .login-layout {
     grid-template-columns: 0.9fr 1.1fr;
