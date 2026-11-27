@@ -1,82 +1,147 @@
 <!doctype html>
 <html lang="id">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ruang diskusi MAPAY BANDUNG untuk berbagi cerita, rekomendasi, pertanyaan, dan masukan perjalanan.">
-  <meta name="theme-color" content="#214F40">
-  <title>Ruang Diskusi — MAPAY BANDUNG</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="src/css/main.css">
-</head>
-<body class="page-discussion">
-<a class="skip-link" href="#main-content">Lewati ke konten utama</a>
-<header class="site-header">
-  <div class="container site-header__inner">
-    <a class="brand" href="index.html" aria-label="MAPAY BANDUNG, beranda">
-      <span class="brand__mark" aria-hidden="true">MB</span>
-      <span class="brand__wordmark">MAPAY<strong>BANDUNG</strong></span>
-    </a>
-    <nav class="primary-nav" aria-label="Navigasi utama"><a href="index.html">Beranda</a><a href="artikel.html">Artikel</a><a href="destinasi.html">Destinasi</a><a href="wilayah.html" aria-current="page">Diskusi</a></nav>
-    <a class="header-login" href="login.html" aria-label="Masuk ke MAPAY BANDUNG" title="Masuk">
-      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13 4h5a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-5"/><path d="M3 12h11m-4-4 4 4-4 4"/></svg>
-    </a>
-    <details class="mobile-nav">
-      <summary aria-label="Buka menu navigasi"><span>MENU</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg></summary>
-      <nav class="mobile-nav__panel" aria-label="Navigasi mobile"><a href="index.html">Beranda</a><a href="artikel.html">Artikel</a><a href="destinasi.html">Destinasi</a><a href="wilayah.html" aria-current="page">Diskusi</a><a href="login.html">Masuk</a></nav>
-    </details>
-  </div>
-</header>
-<main id="main-content">
-  <section class="discussion-page">
-    <div class="container">
-      <div class="discussion-heading">
-        <div><p class="eyebrow"><span class="eyebrow__dot"></span> MAPAY COMMUNITY · OPEN CONVERSATION</p><h1>Cerita jalan-jalanmu<br><em>jangan disimpan sendiri.</em></h1></div>
-        <p>Tempat buat berbagi pengalaman, tanya rekomendasi, kasih masukan, atau cerita hal random yang kamu temuin selama mapay Bandung.</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Ruang diskusi MAPAY BANDUNG untuk berbagi cerita, rekomendasi, pertanyaan, dan masukan perjalanan." />
+    <meta name="theme-color" content="#214F40" />
+    <title>Ruang Diskusi — MAPAY BANDUNG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="src/css/main.css" />
+  </head>
+  <body class="page-discussion">
+    <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="index.html" aria-label="MAPAY BANDUNG, beranda">
+          <span class="brand__mark" aria-hidden="true">MB</span>
+          <span class="brand__wordmark">MAPAY<strong>BANDUNG</strong></span>
+        </a>
+        <nav class="primary-nav" aria-label="Navigasi utama"><a href="index.html">Beranda</a><a href="artikel.html">Artikel</a><a href="destinasi.html">Destinasi</a><a href="wilayah.html" aria-current="page">Diskusi</a></nav>
+        <a class="header-login" href="login.html" aria-label="Masuk ke MAPAY BANDUNG" title="Masuk">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M13 4h5a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-5" />
+            <path d="M3 12h11m-4-4 4 4-4 4" />
+          </svg>
+        </a>
+        <details class="mobile-nav">
+          <summary aria-label="Buka menu navigasi">
+            <span>MENU</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+          </summary>
+          <nav class="mobile-nav__panel" aria-label="Navigasi mobile">
+            <a href="index.html">Beranda</a><a href="artikel.html">Artikel</a><a href="destinasi.html">Destinasi</a><a href="wilayah.html" aria-current="page">Diskusi</a><a href="login.html">Masuk</a>
+          </nav>
+        </details>
       </div>
+    </header>
 
-      <div class="discussion-layout">
-        <section class="discussion-compose" aria-labelledby="discussion-form-title">
-          <div class="discussion-compose__top"><span class="discussion-compose__icon" aria-hidden="true">✳</span><div><p class="eyebrow">START A CONVERSATION</p><h2 id="discussion-form-title">Lempar cerita di sini.</h2></div></div>
-          <form class="discussion-form">
-            <div class="discussion-form__row">
-              <div class="form-field"><label for="discussion-name">Nama / panggilan</label><input id="discussion-name" name="name" type="text" placeholder="Misal: Rara" minlength="2" maxlength="24" required></div>
-              <div class="form-field"><label for="discussion-topic">Topik obrolan</label><select id="discussion-topic" name="topic" required><option value="">Pilih topik</option><option>Cerita perjalanan</option><option>Rekomendasi</option><option>Tanya-tanya</option><option>Masukan</option><option>Keluhan</option></select></div>
+    <main id="main-content">
+      <section class="discussion-page">
+        <div class="container">
+          <div class="discussion-heading">
+            <div>
+              <p class="eyebrow"><span class="eyebrow__dot"></span> MAPAY COMMUNITY · OPEN CONVERSATION</p>
+              <h1>Cerita jalan-jalanmu<br /><em>jangan disimpan sendiri.</em></h1>
             </div>
-            <div class="form-field"><label for="discussion-title">Judul obrolan</label><input id="discussion-title" name="title" type="text" placeholder="Misal: Spot sore favorit di Braga" minlength="4" maxlength="70" required></div>
-            <div class="form-field"><label for="discussion-place">Lokasi / destinasi <span>(opsional)</span></label><input id="discussion-place" name="place" type="text" placeholder="Misal: Braga, Lembang, Ciwidey" maxlength="60"></div>
-            <div class="form-field"><label for="discussion-message">Apa yang mau kamu ceritakan?</label><textarea id="discussion-message" name="message" rows="5" minlength="15" maxlength="500" placeholder="Ceritain pengalaman, rekomendasi, pertanyaan, atau masukanmu..." required></textarea><span class="field-hint">15–500 karakter. Hindari membagikan nomor telepon atau informasi pribadi.</span></div>
-            <button class="button discussion-submit" type="button" disabled>Kirim cerita <span aria-hidden="true">↗</span></button>
-          </form>
-          <div class="discussion-local-note"><span aria-hidden="true">ⓘ</span><p>Form ini merupakan contoh tampilan untuk UTS. Tanpa JavaScript dan server, cerita belum dapat dikirim atau disimpan.</p></div>
-        </section>
-
-        <section class="discussion-feed" aria-labelledby="discussion-feed-title">
-          <div class="discussion-feed__heading"><div><p class="eyebrow">FROM FELLOW TRAVELERS</p><h2 id="discussion-feed-title">Obrolan <em>terbaru.</em></h2></div><span class="discussion-live"><i aria-hidden="true"></i> COMMUNITY BOARD</span></div>
-          <div class="discussion-post-list">
-            <article class="discussion-post"><div class="discussion-post__meta"><span class="discussion-post__avatar">A</span><span><strong>Aluna</strong><small>Contoh diskusi · Rekomendasi</small></span></div><p class="discussion-post__place">BRAGA, KOTA BANDUNG</p><h3>Spot santai buat sore di Braga?</h3><p class="discussion-post__message">Lagi pengin jalan santai dan foto-foto pas sore. Ada rekomendasi tempat yang nyaman buat duduk sebentar?</p></article>
-            <article class="discussion-post"><div class="discussion-post__meta"><span class="discussion-post__avatar">R</span><span><strong>Rafi</strong><small>Contoh diskusi · Cerita perjalanan</small></span></div><p class="discussion-post__place">CIWIDEY, KABUPATEN BANDUNG</p><h3>Berangkat lebih pagi ternyata worth it.</h3><p class="discussion-post__message">Suasana pagi terasa lebih tenang. Saran kecil: cek cuaca dan informasi lokasi dulu sebelum berangkat.</p></article>
+            <p>Tempat buat berbagi pengalaman, tanya rekomendasi, kasih masukan, atau cerita hal random yang kamu temuin selama mapay Bandung.</p>
           </div>
-          <p class="discussion-feed__footnote">Postingan yang tampil adalah contoh konten untuk memperlihatkan bentuk ruang diskusi.</p>
-        </section>
+
+          <div class="discussion-layout">
+            <section class="discussion-compose" aria-labelledby="discussion-form-title">
+              <div class="discussion-compose__top">
+                <span class="discussion-compose__icon" aria-hidden="true">✳</span>
+                <div>
+                  <p class="eyebrow">START A CONVERSATION</p>
+                  <h2 id="discussion-form-title">Lempar cerita di sini.</h2>
+                </div>
+              </div>
+              <form class="discussion-form">
+                <div class="discussion-form__row">
+                  <div class="form-field"><label for="discussion-name">Nama / panggilan</label><input id="discussion-name" name="name" type="text" placeholder="Misal: Rara" minlength="2" maxlength="24" required /></div>
+                  <div class="form-field">
+                    <label for="discussion-topic">Topik obrolan</label
+                    ><select id="discussion-topic" name="topic" required>
+                      <option value="">Pilih topik</option>
+                      <option>Cerita perjalanan</option>
+                      <option>Rekomendasi</option>
+                      <option>Tanya-tanya</option>
+                      <option>Masukan</option>
+                      <option>Keluhan</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-field"><label for="discussion-title">Judul obrolan</label><input id="discussion-title" name="title" type="text" placeholder="Misal: Spot sore favorit di Braga" minlength="4" maxlength="70" required /></div>
+                <div class="form-field">
+                  <label for="discussion-place">Lokasi / destinasi <span>(opsional)</span></label
+                  ><input id="discussion-place" name="place" type="text" placeholder="Misal: Braga, Lembang, Ciwidey" maxlength="60" />
+                </div>
+                <div class="form-field">
+                  <label for="discussion-message">Apa yang mau kamu ceritakan?</label
+                  ><textarea id="discussion-message" name="message" rows="5" minlength="15" maxlength="500" placeholder="Ceritain pengalaman, rekomendasi, pertanyaan, atau masukanmu..." required></textarea
+                  ><span class="field-hint">15–500 karakter. Hindari membagikan nomor telepon atau informasi pribadi.</span>
+                </div>
+                <button class="button discussion-submit" type="button" disabled>Kirim cerita <span aria-hidden="true">↗</span></button>
+              </form>
+              <div class="discussion-local-note">
+                <span aria-hidden="true">ⓘ</span>
+                <p>Form ini merupakan contoh tampilan untuk UTS. Tanpa JavaScript dan server, cerita belum dapat dikirim atau disimpan.</p>
+              </div>
+            </section>
+
+            <section class="discussion-feed" aria-labelledby="discussion-feed-title">
+              <div class="discussion-feed__heading">
+                <div>
+                  <p class="eyebrow">FROM FELLOW TRAVELERS</p>
+                  <h2 id="discussion-feed-title">Obrolan <em>terbaru.</em></h2>
+                </div>
+                <span class="discussion-live"><i aria-hidden="true"></i> COMMUNITY BOARD</span>
+              </div>
+              <div class="discussion-post-list">
+                <article class="discussion-post">
+                  <div class="discussion-post__meta">
+                    <span class="discussion-post__avatar">A</span><span><strong>Aluna</strong><small>Contoh diskusi · Rekomendasi</small></span>
+                  </div>
+                  <p class="discussion-post__place">BRAGA, KOTA BANDUNG</p>
+                  <h3>Spot santai buat sore di Braga?</h3>
+                  <p class="discussion-post__message">Lagi pengin jalan santai dan foto-foto pas sore. Ada rekomendasi tempat yang nyaman buat duduk sebentar?</p>
+                </article>
+                <article class="discussion-post">
+                  <div class="discussion-post__meta">
+                    <span class="discussion-post__avatar">R</span><span><strong>Rafi</strong><small>Contoh diskusi · Cerita perjalanan</small></span>
+                  </div>
+                  <p class="discussion-post__place">CIWIDEY, KABUPATEN BANDUNG</p>
+                  <h3>Berangkat lebih pagi ternyata worth it.</h3>
+                  <p class="discussion-post__message">Suasana pagi terasa lebih tenang. Saran kecil: cek cuaca dan informasi lokasi dulu sebelum berangkat.</p>
+                </article>
+              </div>
+              <p class="discussion-feed__footnote">Postingan yang tampil adalah contoh konten untuk memperlihatkan bentuk ruang diskusi.</p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <a class="brand brand--footer" href="index.html" aria-label="MAPAY BANDUNG, beranda"
+              ><span class="brand__mark" aria-hidden="true">MB</span><span class="brand__wordmark">MAPAY<strong>BANDUNG</strong></span></a
+            >
+          </div>
+          <div class="footer-column">
+            <h2>Kelompok (IFK-25)</h2>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Fauzan F F (D112521003)</a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">M. T D Ahsan (D112521008)</a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">M. Rizki N K (D112521009)</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 MAPAY BANDUNG · Project UTS Desain Web 1</p>
+        </div>
       </div>
-    </div>
-  </section>
-</main>
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-main">
-      <div class="footer-brand">
-        <a class="brand brand--footer" href="index.html" aria-label="MAPAY BANDUNG, beranda"><span class="brand__mark" aria-hidden="true">MB</span><span class="brand__wordmark">MAPAY<strong>BANDUNG</strong></span></a>
-        <p>Panduan ringan buat menemukan sudut kota, udara pegunungan, dan cerita seru di Bandung Raya.</p>
-      </div>
-      <div class="footer-column"><h2>Jelajahi</h2><a href="destinasi.html">Destinasi</a><a href="wilayah.html">Diskusi</a><a href="artikel.html">Cerita</a></div>
-      <div class="footer-column"><h2>Akun</h2><a href="login.html">Masuk</a><a href="index.html">Beranda</a></div>
-    </div>
-    <div class="footer-bottom"><p>© 2026 MAPAY BANDUNG · Project UTS Desain Web 1</p><a href="#main-content">Balik ke atas ↑</a></div>
-  </div>
-</footer>
-</body>
+    </footer>
+  </body>
 </html>
