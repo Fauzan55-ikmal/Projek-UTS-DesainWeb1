@@ -46,7 +46,7 @@ Website memiliki **lima halaman utama** sebagai berikut.
 | **Beranda**   | `index.html`     | Landing page sinematik dengan video latar, pengenalan MAPAY BANDUNG, navigasi utama, serta tombol menuju Destinasi dan Diskusi. Audio ambience tersedia secara opsional melalui pemutar bawaan browser.           |
 | **Artikel**   | `artikel.html`   | Halaman editorial untuk membaca artikel perjalanan. Pengunjung dapat memilih artikel lain melalui radio button HTML; konten berganti menggunakan CSS tanpa berpindah halaman.                                     |
 | **Destinasi** | `destinasi.html` | Menampilkan kartu destinasi dengan gambar, kategori, judul, dan deskripsi. Filter kategori menggunakan radio button dan CSS, sedangkan ringkasan setiap destinasi menggunakan elemen `<details>` dan `<summary>`. |
-| **Diskusi**   | `wilayah.html`   | Halaman berisi formulir diskusi dan contoh posting statis. Nama file `wilayah.html` dipertahankan, tetapi fungsi dan label navigasinya adalah **Diskusi**.                                                        |
+| **Diskusi**   | `diskusi.html`   | Halaman berisi formulir diskusi dan contoh posting statis. Nama file `diskusi.html` dipertahankan, tetapi fungsi dan label navigasinya adalah **Diskusi**.                                                        |
 | **Login**     | `login.html`     | Halaman formulir masuk sebagai demonstrasi desain antarmuka. Form menggunakan tipe input HTML yang sesuai dan validasi dasar browser, tetapi belum terhubung ke sistem akun.                                      |
 
 Setiap halaman menggunakan struktur yang disesuaikan dengan isi. Beranda berfokus pada visual, Artikel menggunakan susunan editorial, Destinasi menggunakan kartu, sedangkan Diskusi dan Login menggunakan tata letak formulir.
@@ -153,7 +153,7 @@ projek-UTS-DesainWeb1/
 ├── index.html                  # Beranda
 ├── artikel.html                # Artikel
 ├── destinasi.html              # Destinasi
-├── wilayah.html                # Diskusi
+├── diskusi.html                # Diskusi
 ├── login.html                  # Login
 ├── README.md                   # Dokumentasi utama
 └── .gitignore
